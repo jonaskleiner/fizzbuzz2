@@ -8,25 +8,26 @@ $(document).ready(function() {
 
 	function processInput() {
 		event.preventDefault(); // prevents form from refreshing page
-		var process_string = $("#fizzCount").val();
-		console.log(process_string);
-
+		var process_string = $("#fizzCount").val();  // raw form value
+		console.log(process_string); // display raw form value
+		var converted_string = parseInt(process_string); // convert string to integer
+		console.log(converted_string); // display converted value
 	}
 	
 	$("#getCountNumber").on('submit', processInput);
 
 		// fizz buzz starts here
 
-	// for ( var i = 1; i <= 2; i++ ) {
+		/*for ( var i = 1; i <= converted_string; i++ ) {
 		
-	// 	if (i % 3 === 0 && i % 5 === 0 ) {
-	// 		$("#theValues").append("<p>fizzbuzz</p>");
-	// 	} else if (i % 3 === 0) {
-	// 		$("#theValues").append("<p>fizz</p>");
-	// 	} else if (i % 5 === 0) {
-	// 		$("#theValues").append("<p>buzz</p>");
-	// 	} else {
-	// 		$("#theValues").append("<p>"+i+"</p>");
-	// 	}
-	// }
+		if (i % 3 === 0 && i % 5 === 0 ) {
+			$("#theValues").append("<p>fizzbuzz</p>");
+		} else if (i % 3 === 0) {
+			$("#theValues").append("<p>fizz</p>");
+		} else if (i % 5 === 0) {
+			$("#theValues").append("<p>buzz</p>");
+		} else {
+			$("#theValues").append("<p>"+i+"</p>");
+		}
+	}*/
 });
