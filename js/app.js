@@ -26,6 +26,11 @@ $(document).ready(function() {
 			}
 
 	}
+
+	function fReset() {
+		location.reload();
+	}
 	
 	$("#getCountNumber").on('submit', processInput);
+	$("#resetSwitch").on('click', fReset);
 });
